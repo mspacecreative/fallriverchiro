@@ -8,7 +8,7 @@ $('.question').click(function(){
 	});
 });
 
-$('.staff-carousel').slick({
+$('.staff_carousel').slick({
   arrows: true,
   dots: true,
 });
