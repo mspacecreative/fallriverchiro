@@ -1554,15 +1554,20 @@ img.alignright {
 /*.home .profile-title {
 	position: absolute;
 	bottom: 0;
-}*/
-
-.home .profile:nth-child(7n) {
-	margin-right: 0;
 }
 
 .home .slick-slide.profile:nth-child(7n) {
 	margin-right: 2.5%;
 }
+*/
+
+.home .profile:nth-child(7n) {
+	margin-right: 0;
+}
+}
+
+.staff_carousel {
+	padding: 0 10%;
 }
 
 .home .slick-slide.profile {
