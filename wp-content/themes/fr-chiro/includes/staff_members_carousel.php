@@ -1,5 +1,4 @@
 <div class="staff_carousel">
-	<div class="profile-wrapper clearfix">
 	<?php 
 	$args = array(
 		'post_type' => 'staff_members', 
@@ -41,6 +40,4 @@
 		</div>
 			
 	<?php endwhile; endif; wp_reset_query(); ?>
-			
-	</div>
 </div>

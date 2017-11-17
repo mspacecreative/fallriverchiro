@@ -9,6 +9,7 @@ $('.question').click(function(){
 });
 
 $('.staff_carousel').slick({
-  arrows: true,
-  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
 });
