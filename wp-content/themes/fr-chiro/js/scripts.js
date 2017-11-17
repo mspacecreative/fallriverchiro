@@ -7,3 +7,8 @@ $('.question').click(function(){
 	$(this).find('.fa').removeClass('rotate');
 	});
 });
+
+$('.staff-carousel').slick({
+  arrows: true,
+  dots: true,
+});

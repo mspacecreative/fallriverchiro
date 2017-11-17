@@ -75,20 +75,41 @@ function staff_home() {
 } 
 add_shortcode( 'staff_home', 'staff_home' );
 
+function staff_carousel() {
+    ob_start();
+    get_template_part('includes/staff_members_carousel');
+    return ob_get_clean();
+} 
+add_shortcode( 'staff_carousel', 'staff_carousel' );
+
 /***************************************************************
  * Scripts
  ***************************************************************/
 
 function theme_scripts(){
+	wp_register_script('jquery-cdn', 'http://code.jquery.com/jquery-1.11.0.min.js', array('jquery'), null, true);
+	
+	wp_register_script('jquery-migrate', 'http://code.jquery.com/jquery-1.11.0.min.js', array('jquery'), null, true);
+	
+	wp_register_script('slick-js', get_stylesheet_directory_uri() . '/js/slick/slick.min.js', array('jquery'), null, true);
 	
 	wp_register_script('main-js', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 
+	wp_enqueue_script('jquery-cdn');
+	wp_enqueue_script('jquery-migrate');
+	wp_enqueue_script('slick-js');
 	wp_enqueue_script('main-js');
 	wp_enqueue_script('fontawesome');
-
 }
-add_action('wp_enqueue_scripts', 'theme_scripts', 100);
+
+function extra_styles() {
+	wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri() . '/slick/slick.css' );
+}
+
+add_action('init', 'theme_scripts');
+add_action('wp_enqueue_scripts', 'extra_styles');
 
 /***************************************************************
  * Remove Comments
