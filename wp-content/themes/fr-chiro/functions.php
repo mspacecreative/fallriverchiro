@@ -105,8 +105,8 @@ function theme_scripts(){
 }
 
 function extra_styles() {
-	wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri() . '/slick/slick.css' );
-	wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . '/slick/slick-theme.css' );
+	wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri() . '/js/slick/slick.css' );
+	wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . '/js/slick/slick-theme.css' );
 }
 
 add_action('init', 'theme_scripts');
