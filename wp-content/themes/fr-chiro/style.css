@@ -1565,6 +1565,11 @@ img.alignright {
 }
 }
 
+.home .slick-slide.profile {
+	margin: 0;
+	padding: 20px;
+}
+
 @media only screen and (min-width: 600px) {
 
 td.text-pos {
