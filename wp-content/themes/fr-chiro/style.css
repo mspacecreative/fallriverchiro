@@ -1570,6 +1570,10 @@ img.alignright {
 	padding: 0 10%;
 }
 
+.slick-prev:before, .slick-next:before {
+	color: #000;
+}
+
 .home .slick-slide.profile {
 	margin: 0;
 	padding: 20px;
