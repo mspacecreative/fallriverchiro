@@ -1551,10 +1551,10 @@ img.alignright {
 	margin-right: 2.5%;
 }
 
-.home .profile-title {
+/*.home .profile-title {
 	position: absolute;
 	bottom: 0;
-}
+}*/
 
 .home .profile:nth-child(7n) {
 	margin-right: 0;
