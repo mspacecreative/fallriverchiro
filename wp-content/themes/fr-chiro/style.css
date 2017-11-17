@@ -1567,7 +1567,16 @@ img.alignright {
 }
 
 .staff_carousel {
-	padding: 0 10%;
+	max-width: 1080px;
+	margin: auto;
+}
+
+.slick-prev {
+    left: -15px;
+}
+
+.slick-next {
+    right: -15px;
 }
 
 .slick-prev:before, .slick-next:before {
