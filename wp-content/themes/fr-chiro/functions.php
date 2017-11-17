@@ -66,6 +66,16 @@ function rmt_toggle() {
 add_shortcode( 'rmt_toggle', 'rmt_toggle' );
 
 /***************************************************************
+ * STAFF MEMBERS HOME PAGE
+ ***************************************************************/
+function staff_home() {
+    ob_start();
+    get_template_part('includes/staff_members_loop');
+    return ob_get_clean();
+} 
+add_shortcode( 'staff_home', 'staff_home' );
+
+/***************************************************************
  * Scripts
  ***************************************************************/
 

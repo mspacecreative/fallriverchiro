@@ -1543,9 +1543,18 @@ img.alignright {
 	width: 90%;
 }
 
-/*.specialty-page .widget_nav_menu {
-	padding-top: 35px!important;
-}*/
+.home .profile {
+	width: 15%;
+}
+
+.home .profile:nth-child(3n) {
+	margin-right: 2.5%;
+}
+
+.home .profile-title {
+	position: absolute;
+	bottom: 0;
+}
 }
 
 @media only screen and (min-width: 600px) {
