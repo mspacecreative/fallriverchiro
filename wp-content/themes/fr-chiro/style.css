@@ -1544,7 +1544,7 @@ img.alignright {
 }
 
 .home .profile {
-	width: 15%;
+	width: 12.14%;
 }
 
 .home .profile:nth-child(3n) {
@@ -1554,6 +1554,10 @@ img.alignright {
 .home .profile-title {
 	position: absolute;
 	bottom: 0;
+}
+
+.home .profile-title:nth-child(7n) {
+	margin-right: 0;
 }
 }
 
