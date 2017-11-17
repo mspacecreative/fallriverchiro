@@ -26,6 +26,9 @@
 .question .fa {
 	transition: all 0.25s ease-in-out;
 	color: #fff;
+	width: 20px;
+	height: 20px;
+	display: table;
 }
 
 .question .fa.rotate {
@@ -34,13 +37,21 @@
 	transition: all 0.25s ease-in-out;
 }
 
+.question .fa-plus:before {
+	text-align: center;
+	font-size: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .icon-container {
 	background-color: #8098be;
-	padding: 3px 5px 2px;
 	margin-right: 10px;
 	text-indent: 0;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .answer {
