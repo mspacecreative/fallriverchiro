@@ -1556,7 +1556,7 @@ img.alignright {
 	bottom: 0;
 }
 
-.home .profile-title:nth-child(7n) {
+.home .profile:nth-child(7n) {
 	margin-right: 0;
 }
 }
